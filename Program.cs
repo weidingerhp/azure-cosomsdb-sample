@@ -22,11 +22,17 @@ namespace CosmosDemo {
 			samples.WriteData().Wait();
 
 			Console.Out.WriteLine("Reading Data from Database");
-			samples.GetData().Wait();
+			samples.GetDataShort().Wait();
 
 			Console.Out.WriteLine("Selecting Data from Database");
 			samples.SelectData().Wait();
 
+			Console.Out.WriteLine("Modifying Data in Database");
+			samples.ModifyData().Wait();
+
+			Console.Out.WriteLine("Reading Data from Database");
+			samples.GetDataShort().Wait();
+			
 			Console.Out.WriteLine("Delete all data");
 			samples.DeleteData().Wait();
 		}
